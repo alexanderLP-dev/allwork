@@ -1,0 +1,205 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 12%;
+}
+
+li {
+  padding: 5px 25px 5px 8px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.main-menu-item {
+  border: 1px solid rgba(34, 100, 54, 0.6);
+  position: relative;
+  padding: 5px 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  text-align: center;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(165, 246, 255, 0.3)),
+    color-stop(rgba(255, 255, 255, 0.7)),
+    to(rgba(165, 246, 255, 0.3))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(165, 246, 255, 0.3),
+    rgba(255, 255, 255, 0.7),
+    rgba(165, 246, 255, 0.3)
+  );
+  background: linear-gradient(
+    to top,
+    rgba(165, 246, 255, 0.3),
+    rgba(255, 255, 255, 0.7),
+    rgba(165, 246, 255, 0.3)
+  );
+  -webkit-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+  -webkit-box-shadow: 1px 5px 25px rgba(34, 100, 54, 0.6);
+  box-shadow: 1px 5px 25px rgba(34, 100, 54, 0.6);
+}
+
+.main-menu-item > a {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 2px 3px #000;
+}
+
+.sub-menu-item {
+  list-style-type: none;
+  border: 1px solid rgba(34, 100, 54, 0.6);
+  text-align: center;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(79, 245, 195, 0.3)),
+    color-stop(rgba(255, 255, 255, 0.7)),
+    to(rgba(79, 245, 195, 0.3))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(79, 245, 195, 0.3),
+    rgba(255, 255, 255, 0.7),
+    rgba(79, 245, 195, 0.3)
+  );
+  background: linear-gradient(
+    to top,
+    rgba(79, 245, 195, 0.3),
+    rgba(255, 255, 255, 0.7),
+    rgba(79, 245, 195, 0.3)
+  );
+}
+
+.sub-menu-item a {
+  color: #fff;
+  text-shadow: 1px 2px 3px #000;
+}
+
+.sub-sub-menu-item a {
+  color: yellow;
+}
+
+.main-menu-item:hover > .sub-menu-ul {
+  display: block;
+  -webkit-border-radius: 0 0 0 6px;
+  border-radius: 0 0 0 6px;
+}
+
+.sub-menu-ul,
+.sub-sub-menu-ul {
+  display: none;
+  margin: 29px 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  -webkit-box-shadow: 1px 5px 25px rgba(34, 100, 54, 0.6);
+  box-shadow: 1px 5px 25px rgba(34, 100, 54, 0.6);
+}
+
+.sub-menu-item:last-child {
+  -webkit-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+}
+
+.sub-sub-menu-ul {
+  top: 0;
+  left: 87px;
+  text-align: center;
+  display: none;
+  border: 1px solid rgba(34, 100, 54, 0.6);
+
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(165, 246, 255, 0.3)),
+    color-stop(rgba(255, 255, 255, 0.7)),
+    to(rgba(165, 246, 255, 0.3))
+  );
+
+  background: -o-linear-gradient(
+    bottom,
+    rgba(165, 246, 255, 0.3),
+    rgba(255, 255, 255, 0.7),
+    rgba(165, 246, 255, 0.3)
+  );
+
+  background: linear-gradient(
+    to top,
+    rgba(165, 246, 255, 0.3),
+    rgba(255, 255, 255, 0.7),
+    rgba(165, 246, 255, 0.3)
+  );
+  margin-right: 2px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.sub-menu-item:hover > .sub-sub-menu-ul {
+  display: block;
+}
+
+.sub-sub-menu-item {
+  padding: 5px 15px;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(79, 82, 245, 0.3)),
+    color-stop(rgba(255, 255, 255, 0.7)),
+    to(rgba(79, 82, 245, 0.3))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(79, 82, 245, 0.3),
+    rgba(255, 255, 255, 0.7),
+    rgba(79, 82, 245, 0.3)
+  );
+  background: linear-gradient(
+    to top,
+    rgba(79, 82, 245, 0.3),
+    rgba(255, 255, 255, 0.7),
+    rgba(79, 82, 245, 0.3)
+  );
+}
+
+.sub-sub-menu-item a {
+  color: #fff;
+  text-shadow: 1px 2px 3px #000;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+    <title>work-1</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <header>
+          <div class="wrap">
+            <div class="row">
+              <div class="menu">
+                <div class="logo">
+                  <i>uasa</i>
+                  <img src="icons/global.png" alt="logo" />
+                </div>
+
+                <ul>
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#">missions</a></li>
+                  <li><a href="#">gallery</a></li>
+                  <li><a href="#">registration</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="heading">
+                <h1>UASA</h1>
+                <p>
+                  Ukrainian Aeronautics and Space Administration
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="row">
+        <div class="about">
+          <h2>about</h2>
+          <div class="wrap">
+            <div class="block-description">
+              <div class="description">
+                
+                <div class="text-block showed">
+                  <h3>Lorem, ipsum dolor.</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. A,
+                    quisquam accusamus consectetur nihil aperiam veniam fugit
+                    delectus, quis nostrum porro quam qui esse eos aut!
+                  </p>
+                </div>
+
+                <div class="text-block">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. A,
+                    quisquam accusamus consectetur nihil aperiam veniam fugit
+                    delectus, quis nostrum porro quam qui esse eos aut!
+                  </p>
+                </div>
+                <div class="text-block">
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. A,
+                    quisquam accusamus consectetur nihil aperiam veniam fugit
+                    delectus, quis nostrum porro quam qui esse eos aut!
+                  </p>
+                </div>
+                <div class="right-left">
+                <button class="prev">&#x276C</button>
+                <button class="next">&#x276D</button>
+                </div>
+              </div>
+              
+              <div class="carousel">
+                <img src="img/space.png" alt="space" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="missions">
+          <h2>missions</h2>
+          <div class="graphics">
+            <canvas id="canvas" width="600" height="400"></canvas>
+            <p style="color:red">workers</p>
+            <p style="color:darkblue">space launches</p>
+            <p style="color:green">money</p>
+            <div class="choose">
+              <button id="btnFirst">history</button>
+              <button id="btnSecond">future</button>
+              <button id="btnThird">someBtn</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="gallery">
+          <h2>gallery</h2>
+          <div class="ourVideo">
+            <iframe
+              width="600"
+              height="400"
+              src="https://www.youtube.com/embed/nA9UZF-SZoQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h2>space flight registration</h2>
+        <div class="registry" >
+          <form  action="#" method="#" >
+            <fieldset>
+              enter your name
+              </fieldset>
+            <input
+              type="text"
+              data-some="text"
+              class="form-control"
+              placeholder="enter your name"
+              required />
+              
+              <fieldset>enter your e-mail</fieldset>
+            <input
+              type="email"
+              data-some="email"
+              class="form-control"
+              placeholder="enter your e-mail" 
+              required
+            />
+            
+            <textarea 
+              id="mainForm"
+              cols="30"
+              rows="10"
+              class="form-control"
+              placeholder="why do you want to leave the earth?"
+            ></textarea>
+            <button type="submit"  id="formSend">GO</button>
+          </form>
+          
+        </div>
+        <div class="registry-modal">
+          <p>Congratulations! they will come for you!</p>
+          <button class="btnRegistryModal" >ok</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer"><h4>we are ready to send you</h4></div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css">
+    <title>Work-2</title>
+  </head>
+  <body>
+    <div class="mainBlock">
+      <div class="showcase">
+        <div class="showcase_touch">
+
+          <div class="description">
+            <p id="nameModels">майка</p>
+          <button type = "submit">заказать</button>
+
+          </div>
+          <div class="main_picture">
+            <button class="left" data-choose>&#x2770</button>
+
+            <img src="img/maika.jpg" alt="" />
+
+            <button class="right" data-choose>&#x2771</button>
+
+            <div class="blockPrintFront"></div>
+            <div class="blockPrintRear"></div>
+          </div>
+
+          <div class="choose_color_side">
+            <button class="turn_models">front</button>
+            <button class="turn_models">rear</button>
+          </div>
+
+        </div>
+
+        <div class="showcase_choose">
+          <p>choose your design</p>
+
+          
+
+          <button id="btnOpenModal">choose img</button>
+          <button id="btnOpenModalText">choose text</button>
+
+          <h3>price:</h3>
+
+          <div class="modal_gallery" hidden>
+            <div class="close_modal">
+              <p>choose img</p>
+              <div class="modal_buttons">
+                <button class="agree">&#x2714</button>
+                <button class="btnModalClose">X</button>
+              </div>
+            </div>
+
+            <img src="img/empty.png" alt="" />
+            <img src="img/rick1.png" alt="" />
+            <img src="img/morty1.png" alt="" />
+            <img src="img/rick1.png" alt="" />
+            <img src="img/morty1.png" alt="" />
+            <img src="img/rick1.png" alt="" />
+            <img src="img/morty1.png" alt="" />
+            <img src="img/rick1.png" alt="" />
+            <img src="img/shturm.jpg" alt="" />
+            <img src="img/rick1.png" alt="" />
+            <img src="img/morty1.png" alt="" />
+            <img src="img/rick1.png" alt="" />
+            <img src="img/shturmovik.png" alt="" />
+            <div class="accept"></div>
+          </div>
+          <div class="modal_gallery_text" hidden>
+            <div class="close_modal">
+              <p>choose text</p>
+              <div class="modal_buttons">
+              <button class="agree">&#x2714</button>
+              <button class="btnModalClose">X</button>
+              </div>
+            </div>
+            <img src="img/empty.png" alt="" />
+
+            <img src="imgText/sw.png" alt="" />
+            <img src="imgText/brawlStars.png" alt="" />
+            <img src="imgText/caliber.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
