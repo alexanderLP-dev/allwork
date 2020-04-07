@@ -94,6 +94,14 @@ h2,
   text-shadow: 1px 2px 3px black;
 }
 
+.works a:nth-of-type(5) {
+  background: url(picBg/starhnight.png) center/cover no-repeat;
+}
+
+.works a:nth-of-type(5):hover {
+  text-shadow: 1px 2px 3px black;
+}
+
 .works a:hover {
   /* background: rgba(255, 0, 0, 0.9); */
   color: #fff;
