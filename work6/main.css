@@ -655,3 +655,224 @@ footer i {
 }
 
 /* ================================== */
+
+/* ======== MEDIA QUERY FROM 990PX============= */
+@media (max-width: 999px) {
+  .search-block {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 17%;
+  }
+
+  .quicklinks {
+    padding: 3% 0;
+  }
+}
+
+@media (max-width: 600px), (max-width: 999px) {
+  .cards {
+    max-width: 100%;
+    margin: 0 40%;
+    flex-direction: column;
+  }
+
+  .card {
+    min-width: 130%;
+    margin-top: 5% auto;
+  }
+
+  .card:nth-of-type(2) {
+    display: none;
+  }
+  .card:nth-of-type(3) {
+    display: none;
+  }
+  .card:nth-of-type(4) {
+    display: none;
+  }
+
+  .info-user {
+    text-align: center;
+  }
+
+  .dots-for-card {
+    margin-top: 5%;
+  }
+
+  .team-articles {
+    margin-top: 5%;
+  }
+
+  .footer-text {
+    max-width: 40%;
+    padding-left: 2%;
+  }
+
+  .footer-social {
+    min-width: 59%;
+    /* margin-right: 5%; */
+  }
+
+  .footer-menu {
+    justify-content: space-around;
+  }
+
+  footer .wrapper {
+    max-width: 97%;
+  }
+
+  .other-links {
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .some-footer-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .block-for-text {
+    font-size: 0.8em;
+    padding-top: 1%;
+  }
+}
+
+@media (max-width: 320px), (max-width: 767px) {
+  nav.big {
+    display: hidden;
+  }
+
+  nav.for-small {
+    display: flex;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .quicklinks {
+    width: 100%;
+  }
+
+  .main-block {
+    background-position: center;
+  }
+
+  .footer-menu {
+    display: block;
+    text-align: center;
+  }
+
+  .cards {
+    display: block;
+    width: 50%;
+    margin: 0 10%;
+  }
+
+  .card {
+    max-width: 50%;
+    margin: 0 5%;
+  }
+
+  .menu-for-footer {
+    width: 100vw;
+    padding: 3% 1% 3% 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .menu-for-footer ul {
+    max-width: 100%;
+  }
+
+  .menu-for-footer li:before {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-for-footer li {
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+  }
+
+  .text-and-social {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer-text {
+    max-width: 90%;
+    text-align: center;
+    margin: 2% auto;
+  }
+
+  .footer-social {
+    width: 100%;
+    justify-self: center;
+    margin: 0 2%;
+  }
+
+  .footer-social a,
+  .footer-social i {
+    padding: 0 1%;
+    margin: 0 1%;
+  }
+
+  .other-links {
+    display: block;
+  }
+
+  .with-map h2 {
+    font-size: 2em;
+    padding: 0 10px 0 10px;
+  }
+
+  .block-for-articles {
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+  }
+
+  .with-pseudo::after {
+    display: none;
+  }
+
+  .block-for-text {
+    padding: 0 0 0 0;
+  }
+
+  .block-with-screen .block-for-text h2 {
+    width: 80%;
+    text-align: center;
+    padding: 0px 0 150px 0;
+    margin: 0px auto;
+  }
+
+  .block-with-screen .block-for-text p {
+    padding: 0 0 20px 0;
+  }
+
+  .for-bg {
+    background-position: 100% 100%;
+    background-size: 100% 50%;
+  }
+}
+
+nav.for-small ul {
+  flex-direction: column;
+  padding-bottom: 1px;
+}
+
+nav.for-small li {
+  padding: 5px;
+}
+
+nav.for-small li a {
+  padding: 5px;
+}
+/* ================================== */
