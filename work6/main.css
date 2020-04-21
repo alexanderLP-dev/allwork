@@ -863,7 +863,7 @@ footer i {
   }
 }
 
-@media (max-width: 375px), (max-width: 425px) {
+/* @media (max-width: 375px), (max-width: 425px) {
   .cards {
     display: block;
     width: 50%;
@@ -902,7 +902,7 @@ footer i {
     max-width: 50%;
     margin: 0 5%;
   }
-}
+} */
 
 nav.for-small ul {
   flex-direction: column;
