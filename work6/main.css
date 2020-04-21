@@ -741,7 +741,7 @@ footer i {
   }
 }
 
-@media (max-width: 320px), (max-width: 600px) {
+@media (max-width: 320px), (max-width: 550px) {
   nav.big {
     display: hidden;
   }
