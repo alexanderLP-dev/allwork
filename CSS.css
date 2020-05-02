@@ -110,6 +110,14 @@ h2,
   text-shadow: 1px 2px 3px black;
 }
 
+.works a:nth-of-type(7) {
+  background: url(picBg/office.jpg) center/cover no-repeat;
+}
+
+.works a:nth-of-type(7):hover {
+  text-shadow: 1px 2px 3px black;
+}
+
 .works a:hover {
   /* background: rgba(255, 0, 0, 0.9); */
   color: #fff;
