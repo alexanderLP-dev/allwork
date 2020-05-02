@@ -70,7 +70,7 @@ h2,
   background: url(picBg/uasaBg.png) center/cover no-repeat;
 }
 
-.works a:nth-of-type(2) {
+/* .works a:nth-of-type(2) {
   background: url(picBg/shopBg.png) center/cover no-repeat;
 }
 
@@ -84,10 +84,26 @@ h2,
 
 .works a:nth-of-type(3):hover {
   text-shadow: 1px 2px 3px black;
+} */
+
+.works a:nth-of-type(2) {
+  background: url(picBg/inktatoo.png) center/cover no-repeat;
+}
+
+.works a:nth-of-type(2):hover {
+  text-shadow: 1px 2px 3px black;
+}
+
+.works a:nth-of-type(3) {
+  background: url(picBg/starhnight.png) center/cover no-repeat;
+}
+
+.works a:nth-of-type(3):hover {
+  text-shadow: 1px 2px 3px black;
 }
 
 .works a:nth-of-type(4) {
-  background: url(picBg/inktatoo.png) center/cover no-repeat;
+  background: url(picBg/travler.jpg) center/cover no-repeat;
 }
 
 .works a:nth-of-type(4):hover {
@@ -95,26 +111,10 @@ h2,
 }
 
 .works a:nth-of-type(5) {
-  background: url(picBg/starhnight.png) center/cover no-repeat;
-}
-
-.works a:nth-of-type(5):hover {
-  text-shadow: 1px 2px 3px black;
-}
-
-.works a:nth-of-type(6) {
-  background: url(picBg/travler.jpg) center/cover no-repeat;
-}
-
-.works a:nth-of-type(6):hover {
-  text-shadow: 1px 2px 3px black;
-}
-
-.works a:nth-of-type(7) {
   background: url(picBg/office.jpg) center/cover no-repeat;
 }
 
-.works a:nth-of-type(7):hover {
+.works a:nth-of-type(5):hover {
   text-shadow: 1px 2px 3px black;
 }
 
