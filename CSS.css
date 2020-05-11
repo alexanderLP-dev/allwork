@@ -70,14 +70,14 @@ h2,
   background: url(picBg/uasaBg.png) center/cover no-repeat;
 }
 
-/* .works a:nth-of-type(2) {
-  background: url(picBg/shopBg.png) center/cover no-repeat;
+.works a:nth-of-type(2) {
+  background: url() center/cover no-repeat;
 }
 
 .works a:nth-of-type(2):hover {
   text-shadow: 1px 2px 3px black;
 }
-
+/*
 .works a:nth-of-type(3) {
   background: url(picBg/menuBg.png) center/cover no-repeat;
 }
