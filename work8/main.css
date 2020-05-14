@@ -899,4 +899,7 @@ footer p {
   input {
     min-width: 92%;
   }
+  header {
+    padding-bottom: 150px;
+  }
 }
