@@ -15,7 +15,7 @@ btnPrev.addEventListener("click", function (event) {
   // console.log(this);
 });
 
-let count = -285;
+let count = -282;
 
 btnNext.addEventListener("click", function (event) {
   for (let i = 0; i < sliderItem.length; i++) {
@@ -24,7 +24,7 @@ btnNext.addEventListener("click", function (event) {
   }
   let lastEl = sliderItem.length - 1;
   if (count > -1425) {
-    count -= 285;
+    count -= 282;
   } else if (lastEl) {
     count = 0;
   }
@@ -84,5 +84,42 @@ trig.addEventListener("mouseleave", function () {
   btnHome.style.transition = "0.3s";
 });
 
-console.dir(this.window);
-console.log(innerWidth);
+// ====================================================
+let noSmallMenu = document.querySelector("body");
+let smallMenu = document.querySelector(".small_menu");
+let subMenu = smallMenu.querySelector("ul");
+let mainMenu = smallMenu.querySelector("#menuString");
+let arrowMenu = document.querySelector("#menuArrow");
+
+subMenu.style.display = "none";
+
+smallMenu.addEventListener("click", function (event) {
+  // debugger;
+  this.target = smallMenu;
+
+  function openMenu() {
+    subMenu.style.display = "block";
+    smallMenu.classList.add("open");
+    mainMenu.style.opacity = "0";
+    arrowMenu.style.opacity = "1";
+    console.log("HI");
+  }
+
+  let closeMenu = function () {
+    subMenu.style.display = "none";
+    arrowMenu.style.opacity = "0";
+    mainMenu.style.opacity = "1";
+    console.log("bye");
+    smallMenu.classList.remove("open");
+  };
+
+  if (subMenu.style.display === "none") {
+    openMenu();
+  } else if (!event.target.focus()) {
+    closeMenu();
+  } else {
+    closeMenu();
+  }
+
+  console.log(event, this.target, subMenu.style.display);
+});

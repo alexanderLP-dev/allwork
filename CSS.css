@@ -127,13 +127,10 @@ h2,
 }
 
 .works a:hover {
-  /* background: rgba(255, 0, 0, 0.9); */
   color: #fff;
   transition: 0.3s;
   box-shadow: 1px 5px 15px lightblue;
   transform: scale(1.1);
   border: 1px solid black;
   border-radius: 7px;
-
-  /* cursor */
 }
