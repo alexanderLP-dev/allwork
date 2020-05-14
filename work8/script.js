@@ -85,41 +85,40 @@ trig.addEventListener("mouseleave", function () {
 });
 
 // ====================================================
+
 let noSmallMenu = document.querySelector("body");
 let smallMenu = document.querySelector(".small_menu");
 let subMenu = smallMenu.querySelector("ul");
 let mainMenu = smallMenu.querySelector("#menuString");
 let arrowMenu = document.querySelector("#menuArrow");
 
+let openMenu = function () {
+  subMenu.style.display = "block";
+  mainMenu.style.opacity = "0";
+  arrowMenu.style.opacity = "1";
+  console.log("HI");
+};
+
+let closeMenu = function () {
+  subMenu.style.display = "none";
+  arrowMenu.style.opacity = "0";
+  mainMenu.style.opacity = "1";
+  console.log("bye");
+};
 subMenu.style.display = "none";
+
+// closeMenu();
 
 smallMenu.addEventListener("click", function (event) {
   // debugger;
-  this.target = smallMenu;
-
-  function openMenu() {
-    subMenu.style.display = "block";
-    smallMenu.classList.add("open");
-    mainMenu.style.opacity = "0";
-    arrowMenu.style.opacity = "1";
-    console.log("HI");
-  }
-
-  let closeMenu = function () {
-    subMenu.style.display = "none";
-    arrowMenu.style.opacity = "0";
-    mainMenu.style.opacity = "1";
-    console.log("bye");
-    smallMenu.classList.remove("open");
-  };
-
-  if (subMenu.style.display === "none") {
+  if (subMenu.style.display == "none") {
     openMenu();
-  } else if (!event.target.focus()) {
-    closeMenu();
   } else {
     closeMenu();
   }
 
-  console.log(event, this.target, subMenu.style.display);
+  console.log(smallMenu.classList);
 });
+
+smallMenu.addEventListener("mouseenter", openMenu);
+smallMenu.addEventListener("mouseleave", closeMenu);
