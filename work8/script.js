@@ -11,8 +11,6 @@ btnPrev.addEventListener("click", function (event) {
     sliderItem[i].style.transform = "translateX(0px)";
     sliderItem[i].style.transition = "0.3s";
   }
-
-  // console.log(this);
 });
 
 let count = -282;
@@ -96,21 +94,17 @@ let openMenu = function () {
   subMenu.style.display = "block";
   mainMenu.style.opacity = "0";
   arrowMenu.style.opacity = "1";
-  console.log("HI");
 };
 
 let closeMenu = function () {
   subMenu.style.display = "none";
   arrowMenu.style.opacity = "0";
   mainMenu.style.opacity = "1";
-  console.log("bye");
 };
+
 subMenu.style.display = "none";
 
-// closeMenu();
-
 smallMenu.addEventListener("click", function (event) {
-  // debugger;
   if (subMenu.style.display == "none") {
     openMenu();
   } else {

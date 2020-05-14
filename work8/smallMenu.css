@@ -58,13 +58,6 @@
   transition: all 0.3s;
 }
 
-/* .small_menu:hover > ul {
-  display: block;
-  opacity: 1;
-  transform: translateX(-120px);
-  transition: all 0.5s;
-} */
-
 .small_menu:hover > p i:nth-of-type(1) {
   opacity: 0;
   transition: 0.3s;
