@@ -119,7 +119,7 @@ h2,
 }
 
 .works a:nth-of-type(6) {
-  background: url(picBg/office.jpg) center/cover no-repeat;
+  background: url(picBg/startup.jpg) center/cover no-repeat;
 }
 
 .works a:nth-of-type(6):hover {
