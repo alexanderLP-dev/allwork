@@ -902,4 +902,9 @@ footer p {
   header {
     padding-bottom: 150px;
   }
+
+  .gallery_item img {
+    min-width: 60%;
+    min-height: 60%;
+  }
 }
