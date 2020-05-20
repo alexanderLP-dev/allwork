@@ -43,7 +43,7 @@ let footerContact = document.querySelector(
 );
 let headerContact = document.querySelector(".block_contact");
 
-if (innerWidth < 768) {
+if (innerWidth < 1024) {
   headerContact.style.display = "none";
   footerContact.style.display = "block";
 } else {
