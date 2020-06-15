@@ -1,7 +1,7 @@
-"üse strict";
+"use strict";
 
 let sliderItems = document.querySelector(".slider_items");
-let items = sliderItems.querySelectorAll("a");
+let items = sliderItems.querySelectorAll(" a");
 
 let btn = document.querySelectorAll(".btn");
 
@@ -34,7 +34,6 @@ btn[1].addEventListener("click", function () {
   }
 });
 function moveNext() {}
-console.log(items);
 
 // ===========================
 
@@ -50,7 +49,3 @@ if (innerWidth < 1024) {
   headerContact.style.display = "block";
   footerContact.style.display = "none";
 }
-
-console.log(footerContact);
-
-console.log(innerWidth);

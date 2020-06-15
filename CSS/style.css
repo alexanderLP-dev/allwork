@@ -188,12 +188,12 @@ h2 {
   padding: 0 1%; }
   .about section {
     margin: 5%; }
+  .about h4 {
+    font-size: 1.8em;
+    margin-bottom: 1%;
+    font-family: sans-serif; }
   .about ul {
     list-style: none; }
-    .about ul p {
-      font-size: 1.8em;
-      margin-bottom: 1%;
-      font-family: sans-serif; }
   .about li {
     font-size: 1.6em;
     font-family: sans-serif;
@@ -223,7 +223,7 @@ h2 {
 
 section {
   font-family: "Comfortaa", cursive; }
-  section p {
+  section h4 {
     text-decoration: underline;
     font-weight: 600; }
   section li {
@@ -259,9 +259,6 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: row wrap;
-    -ms-flex-positive: row wrap;
-    flex-grow: row wrap;
     width: 100%; }
     .small section {
       width: 25%; }
