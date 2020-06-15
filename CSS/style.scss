@@ -146,11 +146,13 @@ h2 {
       transition: background 0.3s;
       &:hover {
         cursor: pointer;
-        color: #fff;
         border-radius: 3px;
         border: 2px solid #000;
-        background: rgba(0, 115, 154, 1);
         transition: all ease-in-out 0.1s;
+      }
+      &:active {
+        background: rgba(0, 115, 154, 1);
+        color: #fff;
       }
     }
     .btn_prev:active {

@@ -130,13 +130,14 @@ h2 {
     transition: background 0.3s; }
     .project .slider_body button:hover {
       cursor: pointer;
-      color: #fff;
       border-radius: 3px;
       border: 2px solid #000;
-      background: #00739a;
       -webkit-transition: all ease-in-out 0.1s;
       -o-transition: all ease-in-out 0.1s;
       transition: all ease-in-out 0.1s; }
+    .project .slider_body button:active {
+      background: #00739a;
+      color: #fff; }
   .project .slider_body .btn_prev:active {
     -webkit-transform: translate(-15px);
     -ms-transform: translate(-15px);
